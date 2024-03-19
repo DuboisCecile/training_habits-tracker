@@ -34,7 +34,7 @@ export const getTodayHabits = async () => {
     return habits.map((habit) => {
         return {
             ...habit,
-            daysDone: habit.daysDone[today] || false,
+            done: habit.daysDone[today] || false,
         };
     });
     // return habits.habits.filter((habit) =>
