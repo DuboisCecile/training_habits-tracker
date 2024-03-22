@@ -1,4 +1,4 @@
-import { createHabit, getHabits } from './habits';
+import { createHabit, getHabits } from '../habits';
 
 const main = async () => {
   const habitsDiv = document.querySelector('#habits');
