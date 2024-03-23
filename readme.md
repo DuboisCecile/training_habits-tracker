@@ -15,4 +15,4 @@ Si on utilise des classes Tailwind de façon dynamique (en construisant les él�
 
 Car Tailwind détecte toutes les strings qui pourraient ressembler à "ses" classes dans les fichiers sources. Or, lorsqu'il le fait, les éléments n'ont pas encoroe été construits par js. Les classes seront donc bien visibles dans le DOM, mais elles ne seront pas interprétées par Tailwind, qui ne les aura pas détectées en amont. Ces styles ne s'appliqueront donc pas.
 
-Il faut aussi penser à mettre la propriété darkMode dans le tailwindConfig.js pour pouvoir implémenter le dark mode.
+Il faut aussi penser à mettre la propriété darkMode dans le tailwind.config.js pour pouvoir implémenter le dark mode.
