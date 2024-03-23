@@ -2,6 +2,7 @@ import path from 'path';
 import fs from 'fs/promises';
 
 const habitsPath = path.join(process.cwd(), 'database.json');
+
 const readFile = async () => {
   const habits = JSON.parse(await fs.readFile(habitsPath, 'utf-8'));
   return habits;
@@ -12,21 +13,6 @@ export const getHabits = async () => {
   return habits.habits;
 };
 
-const writeFile = async (newValues) => {
-  const oldValues = JSON.parse(await fs.readFile(habitsPath, 'utf-8'));
-  await fs.writeFile(
-    habitsPath,
-    JSON.stringify({ ...oldValues, ...newValues }, null, 4),
-    (error) => {
-      if (error) {
-        console.log('An error has occurred ', error);
-        return;
-      }
-      console.log('Data written successfully to disk');
-    },
-  );
-};
-
 export const getTodayHabits = async () => {
   const habits = await getHabits();
   const today = new Date().toISOString().split('T')[0];
@@ -35,9 +21,24 @@ export const getTodayHabits = async () => {
     ...habit,
     done: habit.daysDone[today] || false,
   }));
-  // return habits.habits.filter((habit) =>
-  //     Object.keys(habit.daysDone).includes(today)
-  // );
+};
+
+const writeFile = async (newValues) => {
+  const oldValues = JSON.parse(await fs.readFile(habitsPath, 'utf-8'));
+
+  await fs.writeFile(
+    habitsPath,
+    JSON.stringify({ ...oldValues, ...newValues }, null, 4),
+    (error) => {
+      if (error) {
+        // eslint-disable-next-line no-console
+        console.log('An error has occurred ', error);
+        return;
+      }
+      // eslint-disable-next-line no-console
+      console.log('Data written successfully to disk');
+    },
+  );
 };
 
 export const addHabit = async (title) => {

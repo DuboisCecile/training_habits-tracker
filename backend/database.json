@@ -4,24 +4,19 @@
             "id": 1,
             "title": "Work 4 hours",
             "daysDone": {
-                "2023-01-06": true,
-                "2023-08-11": true,
-                "2023-08-12": true,
-                "2023-08-14": true,
-                "2024-03-19": true,
+                "2024-03-01": true,
                 "2024-03-21": true,
-                "2024-03-22": true
+                "2024-03-22": false
             }
         },
         {
             "id": 2,
             "title": "Go to sport",
             "daysDone": {
-                "2023-08-11": true,
-                "2023-08-12": true,
-                "2023-08-14": true,
                 "2024-03-19": true,
-                "2024-03-21": true
+                "2024-03-21": true,
+                "2024-03-22": true,
+                "2024-03-23": true
             }
         },
         {
@@ -36,15 +31,30 @@
             "id": 4,
             "title": "fdgdfg",
             "daysDone": {
-                "2024-03-22": true
+                "2024-03-22": false,
+                "2024-03-23": true
             }
         },
         {
             "id": 5,
             "title": "dfdfdfd",
             "daysDone": {
-                "2024-03-22": true
+                "2024-03-22": true,
+                "2024-03-23": false
             }
+        },
+        {
+            "id": 6,
+            "title": "fsdfdsfgsdgdfg",
+            "daysDone": {
+                "2024-03-22": true,
+                "2024-03-23": true
+            }
+        },
+        {
+            "id": 7,
+            "title": "sdqsfsfs",
+            "daysDone": {}
         }
     ]
 }

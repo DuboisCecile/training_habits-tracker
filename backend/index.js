@@ -2,8 +2,6 @@ import cors from '@fastify/cors';
 import Fastify from 'fastify';
 import habitsRoute from './routes/habits.js';
 
-console.log('toto');
-
 const fastify = Fastify({
   logger: true,
 });

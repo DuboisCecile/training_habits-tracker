@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark-basics {
+/* .dark-basics {
   @apply dark:bg-gray-800 dark:text-white;
-}
+} */
