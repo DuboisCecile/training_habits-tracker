@@ -16,7 +16,8 @@
                 "2024-03-19": true,
                 "2024-03-21": true,
                 "2024-03-22": true,
-                "2024-03-23": true
+                "2024-03-23": true,
+                "2025-04-23": true
             }
         },
         {
@@ -54,6 +55,11 @@
         {
             "id": 7,
             "title": "sdqsfsfs",
+            "daysDone": {}
+        },
+        {
+            "id": 8,
+            "title": "Cuisiner",
             "daysDone": {}
         }
     ]
